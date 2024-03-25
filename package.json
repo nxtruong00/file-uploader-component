@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "wiz_nguyen",
   "license": "ISC",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
