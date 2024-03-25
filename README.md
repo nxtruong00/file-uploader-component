@@ -1,6 +1,15 @@
-# FileUploaderComponent
+# Angular File Uploader Component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+## Overview
+Angular File Uploader Component is a reusable Angular component that provides file upload functionality with features such as drag and drop support, file preview, progress bar, and file validation. It integrates various dependencies to offer a comprehensive solution for handling file uploads in Angular applications.
+
+## Installation
+To use the Angular File Uploader Component in your Angular project, follow these steps:
+
+1. Install the component:
+   ```bash
+   npm install @angular-material/core ngx-file-drop ngx-image-preview ngx-spinner ngx-toastr
+
 
 ## Development server
 
