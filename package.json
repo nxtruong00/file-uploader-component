@@ -9,9 +9,8 @@
     "test": "ng test"
   },
   "keywords": [],
-  "author": "wiz_nguyen",
+  "author": "wiz_nguyen00",
   "license": "ISC",
-  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
