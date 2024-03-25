@@ -1,5 +1,5 @@
 {
-  "name": "file-uploader-component",
+  "name": "angular-file-uploader-component",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
