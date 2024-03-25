@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.progress {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  transition: width 0.5s ease-in-out;
+}

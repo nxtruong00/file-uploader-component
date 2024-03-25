@@ -1,0 +1,23 @@
+<div class="container">
+  <ngx-file-drop (onFileDrop)="onFileDropped($event)">
+    <ng-template ngxFileDropContent>
+      <p>Drag and drop files here or click to select files</p>
+    </ng-template>
+  </ngx-file-drop>
+  <div *ngIf="files.length > 0">
+    <h4>Uploaded Files:</h4>
+    <div *ngFor="let file of files">
+      <div *ngIf="isImage(file)">
+        <ngx-image-preview [image]="file"></ngx-image-preview>
+      </div>
+      <div *ngIf="!isImage(file)">
+        <p>{{ file.name }}</p>
+      </div>
+    </div>
+    <ngx-spinner [fullScreen]="false" [show]="uploading"></ngx-spinner>
+    <div class="progress" *ngIf="uploadProgress > 0 && uploadProgress < 100">
+      <div class="progress-bar" role="progressbar" [style.width.%]="uploadProgress" aria-valuenow="{{uploadProgress}}" aria-valuemin="0" aria-valuemax="100">{{ uploadProgress }}%</div>
+    </div>
+    <button mat-raised-button color="primary" (click)="uploadFiles()">Upload</button>
+  </div>
+</div>
