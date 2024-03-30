@@ -8,8 +8,9 @@ import {Component, Input} from '@angular/core';
 export class AppComponent {
   title = 'file-uploader-component';
   files: File[] = [];
-   listColumns: string[] = ["name","lastModified" ]
-   headerColumns: string[] = ["Item Name", "Last Modified"];
+  listColumns: string[] = ["name", "lastModified"]
+  headerColumns: string[] = ["Item Name", "Last Modified"];
+
   receiveData(data: File[]) {
     this.files = data;
   }
